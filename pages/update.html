@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Search</title>
+
+    <link rel = "stylesheet" href = "../CSS/edit.css">
+    <link rel ="stylesheet" href="../CSS/Style.css">
+    <link rel ="stylesheet" href="../CSS/nav.css">
+    <script src = "../JS/search.js"> </script>
+    <script type="text/javascript" src = "../JS/update.js"></script>
+    
+</head>
+
+<body >
+    <div class="navi">
+        <ul>
+            
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="add.html">Add Data</a></li>
+            <li><a href="view students.html">Show Data</a></li>
+            <li><a href="delete.html">Delete Data</a></li>
+            <li><a href="update.html">Update Data</a></li>
+            <li><a href="department.html">Add Department</a></li>
+            <li><a href="Search.html">Search For</a></li>
+        </ul>
+    </div>
+
+
+    <div class="box2">
+        <h1>Update Data!</h1>
+        <form name="form1">
+            <input name="id" class = "searchField" type="text"  placeholder="ID= 11111">
+            <input onclick="check(form1)" class = "searchButton" type="button"  value="Search">
+        </form>
+    </div >
+
+    
+    <div class="data"  id="p" style="display: none;">
+        <h1>Update data</h1>
+         <form class="Form" name="form" onsubmit = "return checkForm(this);" >
+            
+            <div class="input-data" >
+                <label>Name</label>
+                <input class="box" type="text" name="name" placeholder="Enter your name" minlength="3" maxlength="30" >
+            </div>
+            <br>
+
+            <div class="input-data">
+                <label>Email</label>
+                <input class="box" type="email" name="email" placeholder="Enter your email"  >
+            </div>
+            <br>
+
+            <div class="input-data">
+                <label>Phone</label>
+                <input class="box" type="text" name="phone" placeholder="Enter your number"  >
+            </div>
+           <br>
+
+            <div class="input-data">
+                <label>Id</label>
+                <input class="box" type="text" name="id" placeholder="Enter your id" maxlength="10" minlength="3" >
+            </div>
+            <br>
+            <div class="input-data">
+                <label  for="dep">department</label>
+                <select class="box" name="department">
+                    
+                    <option value="select department">select department</option>    
+                    <option value="computer science(CS)">computer science(CS)</option>
+                    <option value="Information Technology(IT)">Information Technology(IT)</option>
+                    <option value="Information System(IS)">Information System(IS)</option>
+                    <option value="Decision Support(DS)">Decision Support(DS)</option>
+                    <option value="Artificial Intelligence(AI)">Artificial Intelligence(AI)</option>
+                    <option value="other">other</option>
+            
+    
+                </select>
+            </div>     
+            <br>
+
+            <div class="input-data">
+                <label>Level</label>
+                <input class="box" type="number" name="level" min="1" max="4" placeholder="Enter your level"   >
+            </div>
+            <br>
+
+            <div class="input-data">
+                <label>GPA</label>
+                <input class="box" type="number" step="0.01" name="gpa" min="1" max="4" placeholder="Enter your gpa"   >
+            </div>
+            <br>
+
+            <div class="input-data">
+                <label>Date of birth</label>
+                <input class="box" type="date" name="date"  max="2010-01-01" min="1980-01-01"  >
+            </div>
+            <br>
+
+            <div class="dot">
+            <div class="dot-title">
+                <label >Gender</label>
+            </div>
+            <div>
+                <input id="m" type="radio" name="gender" value="male"   >
+                <label for="m">Male</label>
+                
+                <input id="f" type="radio" name="gender" value="female" >
+                <label for="f">Female</label>
+            </div>
+           </div>
+            <br>
+            <div class="dot">
+            <div class="dot-title">
+                <label >Status</label>
+            </div>
+            <div>
+                <input type="radio" name="Status" id="a" value="active" >
+                <label for="a">Active</label>
+                <input type="radio" name="Status" id="i" value="inactive" >
+                <label for="i">Inactive</label>
+                <br> <br>
+            </div>
+          </div>
+
+        
+            <button class="popup" > save </button>
+        
+            
+         </form >
+    </div>
+
+
+</body>
+</html>
